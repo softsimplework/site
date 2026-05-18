@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests" />
+  <title>A-Studio Showcase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="topbar reveal">
+    <a class="brand" href="#">A-Studio</a>
+    <nav>
+      <a href="#courses" data-i18n="nav_courses">Курсы</a>
+      <a href="#directory" data-i18n="nav_directory">Каталог</a>
+      <a href="#market" data-i18n="nav_market">Маркет</a>
+    </nav>
+    <div class="top-actions">
+      <button id="langToggle" class="lang-btn" type="button">EN</button>
+      <a class="pill" href="#market" data-i18n="explore_btn">Смотреть</a>
+    </div>
+  </header>
+
+  <section class="hero reveal">
+    <p class="kicker" data-i18n="hero_kicker">Креативная платформа</p>
+    <h1 data-i18n="hero_title">Учись. Находи.<br />Создавай лучшие сайты.</h1>
+    <p class="intro" data-i18n="hero_intro">Визуальный лендинг в духе витринных платформ: обучение, каталог студий и маркет цифровых ассетов.</p>
+  </section>
+
+  <main>
+    <section id="courses" class="panel reveal">
+      <div class="panel-head">
+        <p class="kicker" data-i18n="courses_kicker">Курсы</p>
+        <h2 data-i18n="courses_title">Освой веб-дизайн</h2>
+      </div>
+      <div class="grid courses-grid">
+        <article class="card feature">
+          <p class="tag" data-i18n="featured">Рекомендуем</p>
+          <h3 data-i18n="course1_title">Креативная режиссура для веба</h3>
+          <p data-i18n="course1_text">Композиция, типографика, motion и storytelling для выразительных интерфейсов.</p>
+        </article>
+        <article class="card"><h3 data-i18n="course2_title">Системы компоновки</h3><p data-i18n="course2_text">Сетки, ритм и визуальная иерархия.</p></article>
+        <article class="card"><h3 data-i18n="course3_title">Дизайн взаимодействия</h3><p data-i18n="course3_text">Сценарии, анимации и UX-динамика.</p></article>
+      </div>
+    </section>
+
+    <section id="directory" class="panel reveal">
+      <div class="panel-head">
+        <p class="kicker" data-i18n="directory_kicker">Каталог</p>
+        <h2 data-i18n="directory_title">Студии и фрилансеры</h2>
+      </div>
+      <div class="grid directory-grid">
+        <article class="card"><p class="tag" data-i18n="tag_studio">Студия</p><h3>Nord Frame</h3><p data-i18n="dir1_text">Бренд-сайты и премиальный e-commerce.</p></article>
+        <article class="card"><p class="tag" data-i18n="tag_freelancer">Фрилансер</p><h3>Ana M.</h3><p data-i18n="dir2_text">Арт-дирекшн и веб-типографика.</p></article>
+        <article class="card"><p class="tag" data-i18n="tag_studio">Студия</p><h3>Pixel Arcade</h3><p data-i18n="dir3_text">Иммерсивные лендинги и кампании.</p></article>
+        <article class="card"><p class="tag" data-i18n="tag_team">Команда</p><h3>Orbit Bureau</h3><p data-i18n="dir4_text">Дизайн-системы и продуктовые сайты.</p></article>
+      </div>
+    </section>
+
+    <section id="market" class="panel reveal">
+      <div class="panel-head">
+        <p class="kicker" data-i18n="market_kicker">Маркет</p>
+        <h2 data-i18n="market_title">Ассеты и шаблоны</h2>
+      </div>
+      <div class="grid market-grid">
+        <article class="card"><h3 data-i18n="m1_title">Премиум UI Kit</h3><p data-i18n="m1_text">120+ компонентов для редакционных сайтов.</p><span>$39</span></article>
+        <article class="card"><h3 data-i18n="m2_title">Набор анимаций</h3><p data-i18n="m2_text">Reveal-эффекты и переходы страниц.</p><span>$29</span></article>
+        <article class="card"><h3 data-i18n="m3_title">Шаблон портфолио</h3><p data-i18n="m3_text">Витринный макет с динамичными секциями.</p><span>$49</span></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer reveal">
+    <p>© <span id="year"></span> <span data-i18n="footer_name">A-Studio Showcase</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
